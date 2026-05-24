@@ -1,0 +1,117 @@
+.hero {
+  padding-bottom: 53px;
+  background-color: #302c42;
+
+  @media screen and (min-width: 1282px) {
+    padding-top: 138px;
+    padding-bottom: 103px;
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1282px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    width: 318px;
+    height: 277px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1282px) {
+      margin: 0;
+      width: 490px;
+      height: 426px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 36px;
+    width: 298px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1282px) {
+      margin-left: 0px;
+      margin-right: 0px;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 40px;
+      color: #fff;
+      width: 456px;
+      text-align: start;
+    }
+  }
+
+  &__span {
+    font-size: 32px;
+    background: linear-gradient(227deg, #c0b7e8 0%, #8176af 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (min-width: 1282px) {
+      font-size: 46px;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @media screen and (min-width: 1282px) {
+      display: block;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+      width: 450px;
+      margin-bottom: 66px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: flex-start;
+  }
+
+  &__button {
+    border-radius: 40px;
+    width: 292px;
+    height: 52px;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 18px;
+    padding-top: 17px;
+
+    @media screen and (min-width: 1282px) {
+      border-radius: 40px;
+      width: 214px;
+      height: 48px;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 12px;
+      color: #343045;
+      margin: 0;
+    }
+  }
+
+  &__svg {
+    display: none;
+    @media screen and (min-width: 1282px) {
+      display: block;
+    }
+  }
+}
